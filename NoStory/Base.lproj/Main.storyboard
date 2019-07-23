@@ -90,13 +90,72 @@
                     <view key="view" contentMode="scaleToFill" id="HqQ-wI-M9c">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bnh-9Z-sFe">
+                                <rect key="frame" x="10" y="98" width="394" height="754"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FEi-Ir-jV0">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="754"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vyV-Xs-dDp">
+                                                <rect key="frame" x="77" y="118" width="240" height="128"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2tn-Ou-7lo">
+                                                        <rect key="frame" x="73" y="49" width="46" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="2tn-Ou-7lo" secondAttribute="trailing" constant="20" symbolic="YES" id="1U9-3V-dGV"/>
+                                                    <constraint firstItem="2tn-Ou-7lo" firstAttribute="leading" secondItem="vyV-Xs-dDp" secondAttribute="leading" constant="73" id="bOq-Dr-5oN"/>
+                                                    <constraint firstItem="2tn-Ou-7lo" firstAttribute="centerY" secondItem="vyV-Xs-dDp" secondAttribute="centerY" id="ktR-YC-dNw"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kjN-FN-Uid">
+                                                <rect key="frame" x="89" y="442" width="240" height="128"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CoS-wd-Yal">
+                                                        <rect key="frame" x="66" y="49" width="46" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="CoS-wd-Yal" firstAttribute="centerY" secondItem="kjN-FN-Uid" secondAttribute="centerY" id="PDe-ob-1ER"/>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="CoS-wd-Yal" secondAttribute="trailing" constant="20" symbolic="YES" id="WW8-hX-bfK"/>
+                                                    <constraint firstItem="CoS-wd-Yal" firstAttribute="leading" secondItem="kjN-FN-Uid" secondAttribute="leading" constant="66" id="u4j-N7-sGe"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="vyV-Xs-dDp" firstAttribute="centerX" secondItem="FEi-Ir-jV0" secondAttribute="centerX" id="2cv-JB-aPH"/>
+                                            <constraint firstAttribute="bottom" secondItem="vyV-Xs-dDp" secondAttribute="bottom" constant="508" id="BSk-eO-LJM"/>
+                                            <constraint firstAttribute="trailing" secondItem="kjN-FN-Uid" secondAttribute="trailing" constant="65" id="Oyu-on-TmC"/>
+                                            <constraint firstItem="vyV-Xs-dDp" firstAttribute="leading" secondItem="FEi-Ir-jV0" secondAttribute="leading" constant="77" id="S5b-66-ddA"/>
+                                            <constraint firstItem="kjN-FN-Uid" firstAttribute="top" secondItem="FEi-Ir-jV0" secondAttribute="top" constant="442" id="WQv-mO-ieb"/>
+                                            <constraint firstItem="kjN-FN-Uid" firstAttribute="leading" secondItem="FEi-Ir-jV0" secondAttribute="leading" constant="89" id="j21-dZ-Ist"/>
+                                            <constraint firstItem="vyV-Xs-dDp" firstAttribute="top" secondItem="FEi-Ir-jV0" secondAttribute="top" constant="118" id="jQj-oV-K7F"/>
+                                            <constraint firstAttribute="bottom" secondItem="kjN-FN-Uid" secondAttribute="bottom" constant="184" id="tfO-tu-PXb"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bnh-9Z-sFe" firstAttribute="top" secondItem="30R-Ao-Ubp" secondAttribute="top" constant="10" id="EPl-NY-IkI"/>
+                            <constraint firstItem="30R-Ao-Ubp" firstAttribute="trailing" secondItem="bnh-9Z-sFe" secondAttribute="trailing" constant="10" id="L1v-yp-NgR"/>
+                            <constraint firstItem="bnh-9Z-sFe" firstAttribute="leading" secondItem="30R-Ao-Ubp" secondAttribute="leading" constant="10" id="R8t-J2-rES"/>
+                            <constraint firstItem="30R-Ao-Ubp" firstAttribute="bottom" secondItem="bnh-9Z-sFe" secondAttribute="bottom" constant="10" id="aEP-dF-j8u"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="30R-Ao-Ubp"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FCu-La-m0t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1333" y="-706"/>
+            <point key="canvasLocation" x="1361" y="-692"/>
         </scene>
         <!--Pepe View Controller-->
         <scene sceneID="cEK-Nz-Tpd">
@@ -175,7 +234,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ryn-Bb-BIi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1889.8550724637682" y="-206.25"/>
+            <point key="canvasLocation" x="528" y="84"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3jN-ad-j3R">
@@ -193,7 +252,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XRr-Sm-ALb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4.3478260869565224" y="18.75"/>
+            <point key="canvasLocation" x="-342" y="-480"/>
         </scene>
     </scenes>
     <resources>
