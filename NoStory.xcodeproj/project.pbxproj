@@ -12,6 +12,10 @@
 		BC453B3F22DA477500FC00FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC453B3D22DA477500FC00FF /* Main.storyboard */; };
 		BC453B4122DA477700FC00FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC453B4022DA477700FC00FF /* Assets.xcassets */; };
 		BC453B4422DA477700FC00FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC453B4222DA477700FC00FF /* LaunchScreen.storyboard */; };
+		BC453B4C22DA49C100FC00FF /* StoryboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC453B4B22DA49C100FC00FF /* StoryboardViewController.swift */; };
+		BC453B4E22DA4A0100FC00FF /* CodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC453B4D22DA4A0100FC00FF /* CodeViewController.swift */; };
+		BC453B5122DA5CFE00FC00FF /* StoryboardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC453B5322DA5CFE00FC00FF /* StoryboardViewController.storyboard */; };
+		BC453B5622DA8E6900FC00FF /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC453B5522DA8E6900FC00FF /* SnapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		BC453B4022DA477700FC00FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC453B4322DA477700FC00FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC453B4522DA477700FC00FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC453B4B22DA49C100FC00FF /* StoryboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardViewController.swift; sourceTree = "<group>"; };
+		BC453B4D22DA4A0100FC00FF /* CodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeViewController.swift; sourceTree = "<group>"; };
+		BC453B5222DA5CFE00FC00FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/StoryboardViewController.storyboard; sourceTree = "<group>"; };
+		BC453B5522DA8E6900FC00FF /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC453B5622DA8E6900FC00FF /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,7 @@
 			children = (
 				BC453B3822DA477500FC00FF /* NoStory */,
 				BC453B3722DA477500FC00FF /* Products */,
+				BC453B5422DA8E6900FC00FF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +70,19 @@
 				BC453B4022DA477700FC00FF /* Assets.xcassets */,
 				BC453B4222DA477700FC00FF /* LaunchScreen.storyboard */,
 				BC453B4522DA477700FC00FF /* Info.plist */,
+				BC453B4B22DA49C100FC00FF /* StoryboardViewController.swift */,
+				BC453B5322DA5CFE00FC00FF /* StoryboardViewController.storyboard */,
+				BC453B4D22DA4A0100FC00FF /* CodeViewController.swift */,
 			);
 			path = NoStory;
+			sourceTree = "<group>";
+		};
+		BC453B5422DA8E6900FC00FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC453B5522DA8E6900FC00FF /* SnapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +95,7 @@
 				BC453B3222DA477500FC00FF /* Sources */,
 				BC453B3322DA477500FC00FF /* Frameworks */,
 				BC453B3422DA477500FC00FF /* Resources */,
+				BC453B5722DA8EA900FC00FF /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -124,11 +146,35 @@
 			files = (
 				BC453B4422DA477700FC00FF /* LaunchScreen.storyboard in Resources */,
 				BC453B4122DA477700FC00FF /* Assets.xcassets in Resources */,
+				BC453B5122DA5CFE00FC00FF /* StoryboardViewController.storyboard in Resources */,
 				BC453B3F22DA477500FC00FF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BC453B5722DA8EA900FC00FF /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BC453B3222DA477500FC00FF /* Sources */ = {
@@ -136,6 +182,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC453B3C22DA477500FC00FF /* ViewController.swift in Sources */,
+				BC453B4E22DA4A0100FC00FF /* CodeViewController.swift in Sources */,
+				BC453B4C22DA49C100FC00FF /* StoryboardViewController.swift in Sources */,
 				BC453B3A22DA477500FC00FF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -157,6 +205,14 @@
 				BC453B4322DA477700FC00FF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BC453B5322DA5CFE00FC00FF /* StoryboardViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC453B5222DA5CFE00FC00FF /* Base */,
+			);
+			name = StoryboardViewController.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -284,6 +340,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 23A2Q82NUZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = NoStory/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +362,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 23A2Q82NUZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = NoStory/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

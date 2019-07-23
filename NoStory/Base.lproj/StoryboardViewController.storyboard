@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cOb-AD-NYa">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Storyboard View Controller-->
+        <scene sceneID="5Y2-j7-f3m">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KjL-kL-b8P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="cOb-AD-NYa" customClass="StoryboardViewController" customModule="NoStory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fv9-Ox-m0S">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="023" translatesAutoresizingMaskIntoConstraints="NO" id="FHN-g4-V7f">
+                                <rect key="frame" x="12" y="56" width="390" height="390"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="FHN-g4-V7f" secondAttribute="height" multiplier="1:1" id="3lD-sv-gvD"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v42-av-Akf">
+                                <rect key="frame" x="12" y="458" width="390" height="203"/>
+                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="1qZ-7O-1df">
+                                <rect key="frame" x="12" y="673" width="390" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1b-v1-XGi">
+                                        <rect key="frame" x="0.0" y="0.0" width="189" height="30"/>
+                                        <state key="normal" title="Like"/>
+                                        <connections>
+                                            <action selector="likeButtonPressed:" destination="cOb-AD-NYa" eventType="touchUpInside" id="0d9-dm-gVL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Clv-9j-rOQ">
+                                        <rect key="frame" x="201" y="0.0" width="189" height="30"/>
+                                        <state key="normal" title="Share"/>
+                                        <connections>
+                                            <action selector="shareButtonPressed:" destination="cOb-AD-NYa" eventType="touchUpInside" id="T4T-Vb-dQ0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="v42-av-Akf" firstAttribute="leading" secondItem="cpN-Sd-g9r" secondAttribute="leading" constant="12" id="1Ra-4f-kMz"/>
+                            <constraint firstItem="cpN-Sd-g9r" firstAttribute="trailing" secondItem="FHN-g4-V7f" secondAttribute="trailing" constant="12" id="3YI-t5-B0M"/>
+                            <constraint firstItem="1qZ-7O-1df" firstAttribute="leading" secondItem="cpN-Sd-g9r" secondAttribute="leading" constant="12" id="7hH-Ch-k9J"/>
+                            <constraint firstItem="cpN-Sd-g9r" firstAttribute="trailing" secondItem="v42-av-Akf" secondAttribute="trailing" constant="12" id="aD6-fh-NNX"/>
+                            <constraint firstItem="FHN-g4-V7f" firstAttribute="top" secondItem="cpN-Sd-g9r" secondAttribute="top" constant="12" id="beK-s7-bAb"/>
+                            <constraint firstItem="v42-av-Akf" firstAttribute="top" secondItem="FHN-g4-V7f" secondAttribute="bottom" constant="12" id="cwK-aL-aYK"/>
+                            <constraint firstItem="cpN-Sd-g9r" firstAttribute="trailing" secondItem="1qZ-7O-1df" secondAttribute="trailing" constant="12" id="fPO-aC-I4Q"/>
+                            <constraint firstItem="FHN-g4-V7f" firstAttribute="leading" secondItem="cpN-Sd-g9r" secondAttribute="leading" constant="12" id="lEN-lC-OQE"/>
+                            <constraint firstItem="1qZ-7O-1df" firstAttribute="top" secondItem="v42-av-Akf" secondAttribute="bottom" constant="12" id="oUc-ue-GVD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cpN-Sd-g9r"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="FHN-g4-V7f" id="H6N-ye-kYo"/>
+                        <outlet property="likeButton" destination="G1b-v1-XGi" id="gUv-YV-7kJ"/>
+                        <outlet property="shareButton" destination="Clv-9j-rOQ" id="9VO-VY-YvZ"/>
+                        <outlet property="stacView" destination="1qZ-7O-1df" id="ttJ-l4-54Y"/>
+                        <outlet property="titleLabel" destination="v42-av-Akf" id="3FR-yy-cRR"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-4067" y="504"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="023" width="683" height="683"/>
+    </resources>
+</document>
