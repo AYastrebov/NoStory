@@ -16,6 +16,7 @@
 		BC453B4E22DA4A0100FC00FF /* CodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC453B4D22DA4A0100FC00FF /* CodeViewController.swift */; };
 		BC453B5122DA5CFE00FC00FF /* StoryboardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC453B5322DA5CFE00FC00FF /* StoryboardViewController.storyboard */; };
 		BC453B5622DA8E6900FC00FF /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC453B5522DA8E6900FC00FF /* SnapKit.framework */; };
+		BCCB9E8122E901500060FB1D /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCB9E8022E901500060FB1D /* DesignableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		BC453B4D22DA4A0100FC00FF /* CodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeViewController.swift; sourceTree = "<group>"; };
 		BC453B5222DA5CFE00FC00FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/StoryboardViewController.storyboard; sourceTree = "<group>"; };
 		BC453B5522DA8E6900FC00FF /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		BCCB9E8022E901500060FB1D /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				BC453B4B22DA49C100FC00FF /* StoryboardViewController.swift */,
 				BC453B5322DA5CFE00FC00FF /* StoryboardViewController.storyboard */,
 				BC453B4D22DA4A0100FC00FF /* CodeViewController.swift */,
+				BCCB9E8022E901500060FB1D /* DesignableView.swift */,
 			);
 			path = NoStory;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 				BC453B3C22DA477500FC00FF /* ViewController.swift in Sources */,
 				BC453B4E22DA4A0100FC00FF /* CodeViewController.swift in Sources */,
 				BC453B4C22DA49C100FC00FF /* StoryboardViewController.swift in Sources */,
+				BCCB9E8122E901500060FB1D /* DesignableView.swift in Sources */,
 				BC453B3A22DA477500FC00FF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

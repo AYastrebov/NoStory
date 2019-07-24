@@ -8,6 +8,8 @@
 
 import UIKit
 
+@IBDesignable
+
 class DummyViewController: UIViewController {
     var data: [String: String]?
 }

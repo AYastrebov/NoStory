@@ -10,17 +10,17 @@ import UIKit
 
 class StoryboardViewController: UIViewController {
     
-    @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var likeButton: UIButton!
-    @IBOutlet weak var shareButton: UIButton!
-    @IBOutlet weak var stacView: UIStackView!
+    @IBOutlet private weak var imageView: UIImageView!
+    @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet private weak var likeButton: UIButton!
+    @IBOutlet private weak var shareButton: UIButton!
+    @IBOutlet private weak var stacView: UIStackView!
     
-    @IBAction func likeButtonPressed(_ sender: Any) {
+    @IBAction private func likeButtonPressed(_ sender: Any) {
         print("Like")
     }
     
-    @IBAction func shareButtonPressed(_ sender: Any) {
+    @IBAction private func shareButtonPressed(_ sender: Any) {
         print("Share")
     }
 }
